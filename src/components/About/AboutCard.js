@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import beak from "../../Assets/baek.png";
 
 function AboutCard() {
@@ -17,12 +16,19 @@ function AboutCard() {
             뒤처지지 않도록 매일 꾸준히 알고리즘을 공부하고 있습니다.
           </p>
           <ul>
-            <li className="about-activity">
-              <a href="https://github.com/RealSan1/baekjoon">
-            <img src={beak} alt="beak"/>
+          <li className="about-activity" style={{ textAlign: "center", marginTop: "10px" }}>
+          <a href="https://github.com/RealSan1/baekjoon">
+            <img src={beak} alt="beak" 
+            style={{
+              display: "inline",
+              margin: "auto",
+              maxWidth: "60%", 
+              height: "auto"
+            }}/>
               </a>
             </li>
           </ul>
+          <br/>
           <p style={{ color: "rgb(155 126 172)", fontSize: "20px"}}>
             "느려도 멈추지 말기"{" "}
           </p>
