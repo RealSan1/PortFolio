@@ -7,6 +7,7 @@ import {
   SiGithub,
 
 } from "react-icons/si";
+import { DiEclipse } from "react-icons/di";
 
 function Toolstack() {
   return (
@@ -16,6 +17,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAndroid />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiEclipse />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSpring />

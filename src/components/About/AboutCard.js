@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import beak from "../../Assets/baek.png";
 
 function AboutCard() {
   return (
@@ -8,33 +9,23 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            안녕하세요, 저는 <span className="purple">김 산</span>입니다.
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            저는 인하공업전문대학에서<span className="purple"> 컴퓨터정보공학</span>를 진학하였습니다.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            뒤처지지 않도록 매일 꾸준히 알고리즘을 공부하고 있습니다.
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
+              <a href="https://github.com/RealSan1/baekjoon">
+            <img src={beak} alt="beak"/>
+              </a>
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(155 126 172)", fontSize: "20px"}}>
+            "느려도 멈추지 말기"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>
