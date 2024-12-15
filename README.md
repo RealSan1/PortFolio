@@ -3,7 +3,6 @@
 
 ## 수정예정
 - Home - 수정
-- about - 수정 및 백준 티어추가 
 - project - 수정
 - three js - 실패 (CORS 에러)
 
