@@ -22,7 +22,7 @@ function Home() {
 
               <h1 className="heading-name">
                 저는
-                <strong className="main-name"> .....입니다.</strong>
+                <strong className="main-name"> 김 산</strong>입니다.
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

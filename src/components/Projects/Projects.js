@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Ai from "../../Assets/Projects/Ai.png";
+import kiosk from "../../Assets/Projects/kiosk.png";
+import ott from "../../Assets/Projects/ott.png";
+import BigData from "../../Assets/Projects/BigData.png";
+import game from "../../Assets/Projects/game.png";
 
 function Projects() {
   return (
@@ -15,74 +14,57 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          <strong className="purple">Project </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ott}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="OTT 랭킹 사이트"
+              description="넷플릭스, 디즈니 플러스 등 다양한 OTT와 영화의 랭킹을 한눈에 보여주고, 사용자에게 다양한 스트리밍 영상을 추천 및 관리 사이트입니다."
+              ghLink="https://github.com/RealSan1/OTT_Ranking_Site"
+              demoLink="https://realsan1.github.io/OTT_Ranking_Site/OTT%20Ranking.html"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={BigData}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="교통사고 빅데이터 처리"
+              description="영국 경찰에서 제공하는 1,780,653건의 교통사고 데이터를 가공하여 연령별 교통사고 중상자 비율 분석 및 교통사고 발생 요일 및 시간대 등 다양한 데이터를 시각화 하였습니다."
+              ghLink="https://github.com/RealSan1/Car_accident"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Ai}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="사용자 인식을 통한 광고 추천"
+              description="OpenCV를 통한 얼굴 인식과 AI 판단모델(성별, 연령, 악세서리)의 정보를 바탕으로 코사인 유사도를 바탕으로 사용자 맞춤 광고를 제공하는 서비스입니다."
+              ghLink="https://github.com/RealSan1/inhatc-24-1"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={game}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="모바일 게임 앱"
+              description="안드로이드 스튜디오를 사용하여 제작한 어플리케이션, 이용자에게 다양한 게임(테트리스, 반응속도 테스트 등)다양한 게임을 제공하는 어플리케이션입니다."
+              ghLink="https://github.com/RealSan1/MiniGame"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={kiosk}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="키오스크"
+              description="자바 스윙을 바탕으로 제작한 프로그램, PC방 키오스크를 구현하며 재고관리, 이용자 시간관리 등 시중에 존재하는 PC방 키오스크를 바탕으로 제작하였습니다."
+              ghLink="https://github.com/RealSan1/Kiosk"
             />
           </Col>
         </Row>

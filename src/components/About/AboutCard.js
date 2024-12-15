@@ -13,7 +13,7 @@ function AboutCard() {
             저는 인하공업전문대학에서<span className="purple"> 컴퓨터정보공학</span>를 진학하였습니다.
             <br />
             <br />
-            뒤처지지 않도록 매일 꾸준히 알고리즘을 공부하고 있습니다.
+            뒤처지지 않도록 꾸준히 알고리즘을 공부하고 있습니다.
           </p>
           <ul>
           <li className="about-activity" style={{ textAlign: "center", marginTop: "10px" }}>
